@@ -12,7 +12,7 @@
     "open:dist": "babel-node tools/distServer.js",
     "lint": "esw webpack.config.* src tools --color",
     "lint:watch": "npm run lint -- --watch",
-    "build": "babel-node tools/build.js && npm run open:dist",
+    "build": "babel-node tools/build.js",
     "postinstall": "npm run build"
   },
   "author": "Lisa Uijtewaal",
