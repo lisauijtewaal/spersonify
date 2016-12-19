@@ -28,8 +28,7 @@ class ArtistDetailPage extends React.Component{
     }
 
     render(){
-
-    .map(album => {
+        const albums = this.state.albums.map(album => {
             return <Album key={album.id} album={album}/>;
         });
 
