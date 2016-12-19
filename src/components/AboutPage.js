@@ -1,25 +1,50 @@
 import React from 'react';
-import {Link} from 'react-router';
 import '../styles/about-page.css';
+import * as utils from '../utilities';
 
 // Since this component is simple and static, there's no parent container for it.
-const AboutPage = ({children}) => {
-    return (
-        <div>
-            <h2 className="alt-header">About</h2>
-            <p>
-                This example app is part of the <a href="https://github.com/coryhouse/react-slingshot">React-Slingshot
-                starter kit</a>.
-            </p>
-            <p>
-                <Link to="/badlink">Click this bad link</Link> to see the 404 page.
-                <Link to="/about/contact">Ga naar contact</Link>
-                <Link to="/about">Haal weer weg</Link>
+class AboutPage extends React.Component {
+    constructor(props) {
+        super(props);
 
-            </p>
-            {children}
-        </div>
-    );
-};
+        this.state = {
+            user: []
+        };
+    }
+
+    componentDidMount() {
+
+        this.fetch_userinfo();
+    }
+
+    fetch_userinfo()
+    {
+        utils.fetch_authorized_data("/me", (data) => {
+            const item = data;
+            this.setState({
+                user: item
+            });
+        });
+    }
+
+    render()
+    {
+        const user = this.state.user.display_name;
+
+
+        return (
+            <div>
+                <h1>SPersonify</h1>
+               <div>
+                   <h2>{user}</h2>
+               </div>
+
+            </div>
+        );
+
+    }
+
+
+}
 
 export default AboutPage;

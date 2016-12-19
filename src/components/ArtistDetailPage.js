@@ -10,7 +10,6 @@ class ArtistDetailPage extends React.Component{
         this.state = {
             albums: []
         };
-        console.log(props);
     }
 
     componentDidMount(){
