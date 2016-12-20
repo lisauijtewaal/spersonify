@@ -22,6 +22,7 @@ class AboutPage extends React.Component {
     {
         utils.fetch_authorized_data("/me", (data) => {
             const item = data;
+            console.log(item);
             this.setState({
                 user: item
             });
@@ -41,10 +42,7 @@ class AboutPage extends React.Component {
 
             </div>
         );
-
     }
-
-
 }
 
 export default AboutPage;

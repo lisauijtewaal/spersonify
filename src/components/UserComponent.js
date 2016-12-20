@@ -7,6 +7,9 @@ class User extends React.Component {
         return (
             <div className="user">
                 <h2>{user.display_name}</h2>
+                <img src={user.images[0].url} />
+                <br></br>
+                <a href={user.external_urls.spotify}>Go to my profile </a>
             </div>
         )
     }

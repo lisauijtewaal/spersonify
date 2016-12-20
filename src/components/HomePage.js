@@ -23,7 +23,6 @@ class HomePage extends React.Component {
     fetch_artists() {
         utils.fetch_authorized_data("/me/top/artists", (data) => {
             const top_genres = this.get_top_genres(data.items); // Get top genres from artists in Spotify response
-            console.log(top_genres);
             this.setState({
                 artists: data.items,
                 genres: top_genres
@@ -60,7 +59,7 @@ class HomePage extends React.Component {
             // a must be equal to b
             return 0;
         });
-        genres_array.splice(5); // Get first three items of genres_array as top genres
+        genres_array.splice(20); // Get first three items of genres_array as top genres
         return genres_array; // Return genres_array
     }
 
@@ -90,7 +89,6 @@ class HomePage extends React.Component {
                 <h1>SPersonify</h1>
                 {artists}
                 <ol>
-
                 {genres}
                 </ol>
             </div>
