@@ -1,6 +1,7 @@
 import React from 'react';
 import * as utils from '../utilities';
 import Artist from './ArtistComponent';
+import '../styles/home-page.css';
 import Genre from './GenreComponent';
 
 
