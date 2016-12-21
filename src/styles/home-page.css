@@ -1,3 +1,5 @@
-.genre { background-color: #f7f8fb; padding: 20px; border-radius: 10px; width: 200px; }
-.genre h2 { color: #997bbd;  }
-.genre li {color: #997bbd; }
+.homepage-container .genres-widget .genre ul {   padding: 5px;}
+.homepage-container .genres-widget .genre li { color: #997bbd; background-color: #f7f8fb; padding: 10px; border-radius: 50px;}
+.homepage-container .genres-widget .genre h2 { color: #997bbd;  }
+.homepage-container .genres-widget { border-radius: 50px; }
+.homepage-container .genres-widget .all-genres {width: 200px;}

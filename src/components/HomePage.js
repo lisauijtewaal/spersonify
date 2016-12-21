@@ -60,7 +60,7 @@ class HomePage extends React.Component {
             // a must be equal to b
             return 0;
         });
-        genres_array.splice(20); // Get first three items of genres_array as top genres
+        genres_array.splice(5); // Get first three items of genres_array as top genres
         return genres_array; // Return genres_array
     }
 
@@ -86,12 +86,21 @@ class HomePage extends React.Component {
         });
 
         return (
-            <div>
+            <div className="homepage-container">
                 <h1>SPersonify</h1>
-                {artists}
-                <ol>
-                {genres}
-                </ol>
+                <div className ="artist-widget">
+                    <h2> TOP 10 ARTIST </h2>
+                    {artists}
+                </div>
+                <div className ="genres-widget">
+                    <ol>
+                        <h2> TOP 5 GENRES </h2>
+                        <div className="all-genres">
+                            <p>A list of your favorite genres</p>
+                            {genres}
+                        </div>
+                    </ol>
+                </div>
             </div>
         );
     }
