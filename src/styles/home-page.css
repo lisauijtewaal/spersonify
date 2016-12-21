@@ -1,5 +1,8 @@
-.homepage-container .genres-widget .genre ul {   padding: 5px;}
+.homepage-container .genres-widget .genre ul {padding: 0px;}
 .homepage-container .genres-widget .genre li { color: #997bbd; background-color: #f7f8fb; padding: 10px; border-radius: 50px;}
 .homepage-container .genres-widget .genre h2 { color: #997bbd;  }
-.homepage-container .genres-widget { border-radius: 50px; }
-.homepage-container .genres-widget .all-genres {width: 200px;}
+.homepage-container .artist-widget { width: 300px; }
+.homepage-container .artist-widget .all-artists { background-color: #f7f8fb; border-radius: 20px; padding: 20px; }
+.homepage-container .artist-widget .all-artists a { text-decoration: none; color: #997bbd;}
+.homepage-container .genres-widget  {width: 200px;}
+.homepage-container{width: 800px;}

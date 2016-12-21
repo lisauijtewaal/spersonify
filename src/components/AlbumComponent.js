@@ -6,7 +6,6 @@ class Album extends React.Component {
         const album = this.props.album;
         return (
             <div className="album">
-                <h3>Album</h3>
                 <li>
                     <a href={album.uri}>{album.name}</a>
                 </li>

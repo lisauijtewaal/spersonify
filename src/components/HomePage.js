@@ -90,16 +90,18 @@ class HomePage extends React.Component {
                 <h1>SPersonify</h1>
                 <div className ="artist-widget">
                     <h2> TOP 10 ARTIST </h2>
+                    <p> These are your favorite artist. To see the top best of their albums click on the artist.</p>
+                    <div className="all-artists">
                     {artists}
+                    </div>
                 </div>
                 <div className ="genres-widget">
-                    <ol>
                         <h2> TOP 5 GENRES </h2>
                         <div className="all-genres">
                             <p>A list of your favorite genres</p>
-                            {genres}
-                        </div>
-                    </ol>
+                             {genres}
+                            </div>
+
                 </div>
             </div>
         );
