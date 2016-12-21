@@ -1,6 +1,7 @@
 import React from 'react';
 import * as utils from '../utilities';
 import Album from './AlbumComponent';
+import '../styles/album-page.css';
 
 
 class ArtistDetailPage extends React.Component{
@@ -35,6 +36,7 @@ class ArtistDetailPage extends React.Component{
         return (
             <div>
                 <h1>SPersonify</h1>
+                <p>Click on the album and you will be redirected to Spotify.</p>
                 {albums}
             </div>
         );
