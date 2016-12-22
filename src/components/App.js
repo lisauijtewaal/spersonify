@@ -9,9 +9,9 @@ class App extends React.Component {
       <div>
         <IndexLink to="/">Login</IndexLink>
         {' | '}
-        <Link to="/about">About</Link>
-          {' | '}
           <Link to="/home">Homepage</Link>
+          {' | '}
+          <Link to="/about">About</Link>
           <br/>
         {this.props.children}
       </div>

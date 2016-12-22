@@ -89,7 +89,7 @@ class HomePage extends React.Component {
                 <h1>SPersonify</h1>
                 <div className ="artist-widget">
                     <h2> TOP 10 ARTIST </h2>
-                    <p> These are your favorite artist. To see the top best of their albums click on the artist.</p>
+                    <p> These are your favorite artist. To see the best of their albums click on the artist.</p>
                     <div className="all-artists">
                     {artists}
                     </div>
