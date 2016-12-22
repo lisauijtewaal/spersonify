@@ -1,6 +1,6 @@
 Spersonify
 
-Spersonify is using ES6 and transpiles it back to ES6 by using BabelJS with Webpack
+Spersonify is using ES6 and transpiles it back to ES6 by using BabelJS with Webpack.
 Styling is done through CSS 3.
 Heroku support is already built in to make it as easy as possible to launch your app into the world wide web.
 
