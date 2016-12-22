@@ -9,7 +9,7 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
+        this.state = { // creating empty objects to fill later:
             artists: [],
             genres: []
         };
@@ -24,13 +24,12 @@ class HomePage extends React.Component {
     fetch_artists() {
         utils.fetch_authorized_data("/me/top/artists", (data) => {
             const top_genres = this.get_top_genres(data.items); // Get top genres from artists in Spotify response
-            this.setState({
-                artists: data.items,
+            this.setState({ // setSate sets the data. If the data from the server request callbacks changes setState will be triggered so the data is always up to date.
+                artists: data.items,  // Save the generated data in the empty objects
                 genres: top_genres
             })
 
         });
-
     }
 
     get_top_genres(artists) {
@@ -57,10 +56,9 @@ class HomePage extends React.Component {
             if (a.value < b.value) {
                 return 1;
             }
-            // a must be equal to b
             return 0;
         });
-        genres_array.splice(5); // Get first three items of genres_array as top genres
+        genres_array.splice(5); // Get first 5 items of genres_array as top genres
         return genres_array; // Return genres_array
     }
 
@@ -77,8 +75,8 @@ class HomePage extends React.Component {
 
 
     render() {
-        const artists = this.state.artists.map(artist => {
-            return <Artist key={artist.id} artist={artist}/>;
+        const artists = this.state.artists.map(artist => { // creates a new array with the results of calling a function for every array element.
+            return <Artist key={artist.id} artist={artist}/>;    // return Artist Component
         });
 
         const genres = this.state.genres.map(genre => {
@@ -101,7 +99,6 @@ class HomePage extends React.Component {
                             <p>A list of your favorite genres</p>
                              {genres}
                             </div>
-
                 </div>
             </div>
         );

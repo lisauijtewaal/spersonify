@@ -37,7 +37,9 @@ class ArtistDetailPage extends React.Component{
             <div>
                 <h1>SPersonify</h1>
                 <p>Click on the album and you will be redirected to Spotify.</p>
-                {albums}
+                <div className="all-albums">
+                    {albums}
+                </div>
             </div>
         );
     };

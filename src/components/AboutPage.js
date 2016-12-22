@@ -36,6 +36,7 @@ class AboutPage extends React.Component {
         return (
             <div>
                 <h1>SPersonify</h1>
+                <h2>User profile</h2>
                <div>
                    <User key={user.uri} user={user} />
                </div>
