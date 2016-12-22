@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// if page doesn't exist
 const NotFoundPage = () => {
   return (
     <div>

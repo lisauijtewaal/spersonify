@@ -13,7 +13,7 @@ export default (
     // Define which component should render based on which path is currently active:
     <Route path="/" component={App}>
         <IndexRoute component={LoginPage}/>
-        <Route path="homepage" component={HomePage}/>
+        <Route path="home" component={HomePage}/>
         <Route path="artist/:artistId" component={ArtistDetailPage}/>
         <Route path="about" component={AboutPage}/>
         <Route path="*" component={NotFoundPage}/>

@@ -99,7 +99,7 @@ class HomePage extends React.Component {
                         <div className="all-genres">
                             <p>A list of your favorite genres</p>
                              {genres}
-                            </div>
+                        </div>
                 </div>
             </div>
         );
