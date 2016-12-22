@@ -5,6 +5,7 @@ import {render} from 'react-dom';
 import { Router, browserHistory } from 'react-router';
 import routes from './routes';
 import './styles/styles.scss';
+import ES6Promise from 'es6-promise';  ES6Promise.polyfill();
 
 render(
     <Router history={browserHistory} routes={routes} />, document.getElementById('app')

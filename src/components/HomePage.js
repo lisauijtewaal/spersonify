@@ -65,7 +65,7 @@ class HomePage extends React.Component {
 
 
     get_hash() {
-        if (location.href.includes("access_token")) {
+        if (location.href.indexOf("access_token")> -1) {
             const hash = window.location.hash;
             let d = new Date();
             d.setHours(d.getHours() + 1);
