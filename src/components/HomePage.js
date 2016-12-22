@@ -9,20 +9,21 @@ class HomePage extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = { // creating empty objects to fill later:
+        this.state = { // initialize the state to have an empty array of artists and genres
             artists: [],
             genres: []
         };
     }
 
-    componentDidMount() {
+    //  this function will be invoked immediately after a component is mounted.
+    componentDidMount() { // will execute both functions below
         this.get_hash();
         this.fetch_artists();
     }
 
 
     fetch_artists() {
-        utils.fetch_authorized_data("/me/top/artists", (data) => {
+        utils.fetch_authorized_data("/me/top/artists", (data) => { //fetch the data from the Spotify Api and saves it in the data variable
             const top_genres = this.get_top_genres(data.items); // Get top genres from artists in Spotify response
             this.setState({ // setSate sets the data. If the data from the server request callbacks changes setState will be triggered so the data is always up to date.
                 artists: data.items,  // Save the generated data in the empty objects

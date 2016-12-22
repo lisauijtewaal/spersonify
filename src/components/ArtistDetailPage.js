@@ -8,21 +8,22 @@ class ArtistDetailPage extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {
+        this.state = { // initialize the state to have an empty array of albums
             albums: []
         };
     }
 
-    componentDidMount(){
+    //  this function will be invoked immediately after a component is mounted.
+    componentDidMount(){ // will execute the function below
         this.fetch_albums();
     }
 
 
     fetch_albums() {
         console.log(this.props);
-        utils.fetch_data(`/artists/${this.props.routeParams.artistId}/albums`, (data) => {
+        utils.fetch_data(`/artists/${this.props.routeParams.artistId}/albums`, (data) => { //fetch the data from the Spotify Api and saves it in the data variable
             const items = data.items;
-            this.setState({
+            this.setState({ // setSate sets the data. If the data from the server request callbacks changes setState will be triggered so the data is always up to date.
                 albums: items
             });
         })
