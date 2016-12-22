@@ -9,7 +9,7 @@ import ArtistDetailPage from './components/ArtistDetailPage.js';
 import NotFoundPage from './components/NotFoundPage.js';
 
 
-export default ( // /about
+export default (
     <Route path="/" component={App}>
         <IndexRoute component={LoginPage}/>
         <Route path="homepage" component={HomePage}/>

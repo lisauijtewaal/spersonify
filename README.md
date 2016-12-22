@@ -1,5 +1,6 @@
 Spersonify
 
+Spersonify is build in the framework React
 Spersonify is using ES6 and transpiles it back to ES6 by using BabelJS with Webpack.
 Styling is done through CSS 3.
 Spersonify already supports Heroku so you can launch Spersonify into the web.
