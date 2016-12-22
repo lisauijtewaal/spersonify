@@ -11,8 +11,8 @@ import NotFoundPage from './components/NotFoundPage.js';
 
 export default ( // /about
     <Route path="/" component={App}>
-        <IndexRoute component={HomePage}/>
-        <Route path="login" component={LoginPage}/>
+        <IndexRoute component={LoginPage}/>
+        <Route path="homepage" component={HomePage}/>
         <Route path="artist/:artistId" component={ArtistDetailPage}/>
         <Route path="about" component={AboutPage}/>
         <Route path="*" component={NotFoundPage}/>

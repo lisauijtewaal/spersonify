@@ -1,18 +1,16 @@
 import React, { PropTypes } from 'react';
 import { Link, IndexLink } from 'react-router';
 
-// This is a class-based component because the current
-// version of hot reloading won't hot reload a stateless
-// component at the top-level.
+
 class App extends React.Component {
   render() {
     return (
       <div>
-        <IndexLink to="/">Home</IndexLink>
+        <IndexLink to="/">Login</IndexLink>
         {' | '}
         <Link to="/about">About</Link>
           {' | '}
-          <Link to="/login">Login</Link>
+          <Link to="/home">Homepage</Link>
           <br/>
         {this.props.children}
       </div>
