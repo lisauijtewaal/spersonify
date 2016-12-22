@@ -67,7 +67,8 @@
     "webpack-bundle-analyzer": "1.5.3",
     "webpack-dev-middleware": "1.8.4",
     "webpack-hot-middleware": "2.13.0",
-    "webpack-md5-hash": "0.0.5"
+    "webpack-md5-hash": "0.0.5",
+    "whatwg-fetch": "^2.0.1"
   },
   "repository": {
     "type": "git",
