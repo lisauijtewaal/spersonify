@@ -10,6 +10,7 @@ import NotFoundPage from './components/NotFoundPage.js';
 
 
 export default (
+    // Define which component should render based on which path is currently active:
     <Route path="/" component={App}>
         <IndexRoute component={LoginPage}/>
         <Route path="homepage" component={HomePage}/>
