@@ -30,8 +30,8 @@ class ArtistDetailPage extends React.Component{
     }
 
     render(){
-        const albums = this.state.albums.map(album => {
-            return <Album key={album.id} album={album}/>;
+        const albums = this.state.albums.map(album => { // creates a new array with the results of calling a function for every array element.
+            return <Album key={album.id} album={album}/>; // return Album Component
         });
 
         return (
