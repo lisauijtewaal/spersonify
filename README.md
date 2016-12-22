@@ -11,4 +11,5 @@ Getting started
 Clone the repository.
 cd into the repo and install the app with the commandline: npm install.
 If you choose to run Spersonify locally you need to add the commandline run npm start on the repo folder. You can now visit http://localhost:3000 to see the app.
-If you need to put Spersonify online you can easily push the repo to a service like Heroku.
+
+Want to use Spersonify online? Go to https://spersonify.herokuapp.com/
